@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 4</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .grid-items{
+            height: calc(100vh - 50px);
+            background-color: maroon;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .items{
+            background-color: blue;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item2{
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .item4{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .item3{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .item5{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+<body>
+        <div class="grid-items">
+            <div class="items item1">Item 1</div>
+            <div class="items item2">Item 2</div>
+            <div class="items item3">Item 3</div>
+            <div class="items item4">Item 4</div>
+            <div class="items item5">Item 5</div>
+
+        </div>
+</body>
+</html>

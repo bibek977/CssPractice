@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            /* width: 500px; */
+            height: 500px;
+            background-color: aqua;
+            display: grid;
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            grid-template-rows: 100px 1fr .5fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .items{
+            background-color: maroon;
+        }
+
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .item5{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="items item1">1</div>
+      <div class="items item2">2</div>
+      <div class="items item3">3</div>
+      <div class="items item4">4</div>
+      <div class="items item5">5</div>
+
+    </div>
+</body>
+</html>
