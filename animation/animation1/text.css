@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  width: 80vw;
+  background-color: #657896;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+body .grid .grid-item {
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8rem;
+  width: 8rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .grid .grid-item:nth-child(1) {
+  -webkit-animation: fontChange 4s ease-in-out 1;
+          animation: fontChange 4s ease-in-out 1;
+}
+
+@-webkit-keyframes fontChange {
+  0% {
+    font-size: 2rem;
+  }
+  50% {
+    font-size: 4rem;
+    background-color: #329c3b;
+  }
+  100% {
+    font-size: 2rem;
+  }
+}
+
+@keyframes fontChange {
+  0% {
+    font-size: 2rem;
+  }
+  50% {
+    font-size: 4rem;
+    background-color: #329c3b;
+  }
+  100% {
+    font-size: 2rem;
+  }
+}
+
+body .grid .grid-item:nth-child(2) {
+  -webkit-animation: colorChange 4s ease-in-out 1;
+          animation: colorChange 4s ease-in-out 1;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+@-webkit-keyframes colorChange {
+  50% {
+    color: black;
+    background-color: #329c3b;
+  }
+}
+
+@keyframes colorChange {
+  50% {
+    color: black;
+    background-color: #329c3b;
+  }
+}
+
+body .grid .grid-item:nth-child(3) {
+  -webkit-animation: hideSeek 4s ease-in 1;
+          animation: hideSeek 4s ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+@-webkit-keyframes hideSeek {
+  50% {
+    opacity: 0;
+    background-color: #329c3b;
+  }
+}
+
+@keyframes hideSeek {
+  50% {
+    opacity: 0;
+    background-color: #329c3b;
+  }
+}
+
+body .grid .grid-item:nth-child(4) {
+  -webkit-animation: rotateRound 4s ease-out 1;
+          animation: rotateRound 4s ease-out 1;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+@-webkit-keyframes rotateRound {
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    background-color: #329c3b;
+  }
+}
+
+@keyframes rotateRound {
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    background-color: #329c3b;
+  }
+}
+
+body .grid .grid-item:nth-child(5) {
+  -webkit-animation: skewDown 4s ease 1;
+          animation: skewDown 4s ease 1;
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+@-webkit-keyframes skewDown {
+  50% {
+    -webkit-transform: skewX(60deg);
+            transform: skewX(60deg);
+    background-color: #329c3b;
+  }
+}
+
+@keyframes skewDown {
+  50% {
+    -webkit-transform: skewX(60deg);
+            transform: skewX(60deg);
+    background-color: #329c3b;
+  }
+}
+
+body .grid .grid-item:nth-child(6) {
+  -webkit-animation: scaleUp 4s linear 1;
+          animation: scaleUp 4s linear 1;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+@-webkit-keyframes scaleUp {
+  50% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+    background-color: #329c3b;
+  }
+}
+
+@keyframes scaleUp {
+  50% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+    background-color: #329c3b;
+  }
+}
+
+body .grid .grid-item:nth-child(7) {
+  -webkit-animation: slideSide 4s ease-out 1;
+          animation: slideSide 4s ease-out 1;
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+@-webkit-keyframes slideSide {
+  50% {
+    -webkit-transform: translate(1rem, 1rem);
+            transform: translate(1rem, 1rem);
+    background-color: #329c3b;
+  }
+}
+
+@keyframes slideSide {
+  50% {
+    -webkit-transform: translate(1rem, 1rem);
+            transform: translate(1rem, 1rem);
+    background-color: #329c3b;
+  }
+}
+/*# sourceMappingURL=text.css.map */
